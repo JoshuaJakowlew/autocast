@@ -4,7 +4,7 @@ import keyboard
 import psutil
 import json
 
-def init(process_name):
+def init():
     config = load_config()
     return config
 
