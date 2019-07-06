@@ -5,7 +5,7 @@ _PROCESS_NAME = "dota2.exe"
 def main():
     config = autocast.init(_PROCESS_NAME)
     if not config:
-        print("Process \"{}\" not found!".format(_PROCESS_NAME))
+        print("Config \"{}\" not found!".format(_PROCESS_NAME))
     else:
         perform(config)
 def perform(config):
