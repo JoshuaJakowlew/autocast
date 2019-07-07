@@ -10,11 +10,8 @@ def init():
 
 def perform(config):
     if keyboard.is_pressed(config["trigger"]):
-        s = ''
         for key in config["keys"]:
-            s += key["key"]
-            # press_key(key["key"], key["delay"])
-        keyboard.write(s)
+            press_key(key["key"], key["delay"])
 
 def press_key(key, delay):
     random_delay = get_delay(delay)
