@@ -36,5 +36,4 @@ def load_config():
         config["trigger"] = data["trigger"]
         for key in data["keys"]:
             config["keys"].append(key)
-        print(config)
         return config
